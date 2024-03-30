@@ -121,9 +121,9 @@ async def gen_thumb(videoid, user_id):
         background.paste(image3, (0, 0), mask=image3)
 
         draw = ImageDraw.Draw(background)
-        font = ImageFont.truetype("KishuMusic/assetsfont2.ttf", 45)
-        ImageFont.truetype("KishuMusic/assetsfont2.ttf", 70)
-        arial = ImageFont.truetype("KishuMusic/assetsfont2.ttf", 30)
+        font = ImageFont.truetype("KishuMusic/assets/font2.ttf", 45)
+        ImageFont.truetype("KishuMusic/assets/font2.ttf", 70)
+        arial = ImageFont.truetype("KishuMusic/assets/font2.ttf", 30)
         ImageFont.truetype("KishuMusic/assetsfont.ttf", 30)
         para = textwrap.wrap(title, width=32)
         try:
@@ -266,9 +266,9 @@ async def gen_qthumb(videoid, user_id):
         background.paste(image3, (0, 0), mask=image3)
 
         draw = ImageDraw.Draw(background)
-        font = ImageFont.truetype("KishuMusic/assetsfont2.ttf", 45)
-        ImageFont.truetype("KishuMusic/assetsfont2.ttf", 70)
-        arial = ImageFont.truetype("KishuMusic/assetsfont2.ttf", 30)
+        font = ImageFont.truetype("KishuMusic/assets/font2.ttf", 45)
+        ImageFont.truetype("KishuMusic/assets/font2.ttf", 70)
+        arial = ImageFont.truetype("KishuMusic/assets/font2.ttf", 30)
         ImageFont.truetype("KishuMusic/assetsfont.ttf", 30)
         para = textwrap.wrap(title, width=32)
         try:
