@@ -8,8 +8,8 @@ import numpy as np
 from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from youtubesearchpython.__future__ import VideosSearch
 
-from config import FAILED
-from KishuMusic import BOT_ID, LOGGER, app
+from config import FAILED, BOT_ID
+from KishuMusic import LOGGER, app
 
 
 def changeImageSize(maxWidth, maxHeight, image):
