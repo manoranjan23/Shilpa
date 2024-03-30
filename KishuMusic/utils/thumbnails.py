@@ -124,7 +124,7 @@ async def gen_thumb(videoid, user_id):
         font = ImageFont.truetype("KishuMusic/assets/font2.ttf", 45)
         ImageFont.truetype("KishuMusic/assets/font2.ttf", 70)
         arial = ImageFont.truetype("KishuMusic/assets/font2.ttf", 30)
-        ImageFont.truetype("KishuMusic/assetsfont.ttf", 30)
+        ImageFont.truetype("KishuMusic/assets/font.ttf", 30)
         para = textwrap.wrap(title, width=32)
         try:
             draw.text(
