@@ -28,11 +28,7 @@ from config import BANNED_USERS, AMOP
 from strings import get_string
 
 ANNIE_VID = [
-    "https://telegra.ph/file/c6c1ac9aee4192a8a3747.mp4",
-    "https://telegra.ph/file/72f349b1386d6d9374a38.mp4",
-    "https://telegra.ph/file/9b7e1b820c72a14d90be7.mp4",
-    "https://telegra.ph/file/a4d90b0cb759b67d68644.mp4",
-    "https://telegra.ph/file/a4d90b0cb759b67d68644.mp4",
+    "https://github.com/JARVIS-V2/KISHU-X-MUSIC/assets/161505946/33a4ae64-d250-41bc-9c23-49862e6731e2",
 ]
 
 STICKERS = [
