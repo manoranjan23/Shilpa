@@ -1,7 +1,7 @@
 import asyncio
-from telegram import CallbackQuery
+import random
 from pyrogram import filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 
 from KishuMusic import YouTube, app
 from KishuMusic.core.call import Jarvis
