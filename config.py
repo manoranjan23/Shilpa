@@ -93,7 +93,7 @@ YOUTUBE_IMG_URL = "https://telegra.ph/file/06679f04da4b2fbbb12d0.jpg"
 SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/file/06679f04da4b2fbbb12d0.jpg"
 SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/06679f04da4b2fbbb12d0.jpg"
 SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/06679f04da4b2fbbb12d0.jpg"
-
+FAILED = "https://te.legra.ph/file/4c896584b592593c00aa8.jpg"
 
 def time_to_seconds(time):
     stringt = str(time)
