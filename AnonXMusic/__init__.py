@@ -1,8 +1,8 @@
-from AnonXMusic.core.bot import Anony
-from AnonXMusic.core.dir import dirr
-from AnonXMusic.core.git import git
-from AnonXMusic.core.userbot import Userbot
-from AnonXMusic.misc import dbb, heroku
+from KishuMusic.core.bot import Anony
+from KishuMusic.core.dir import dirr
+from KishuMusic.core.git import git
+from KishuMusic.core.userbot import Userbot
+from KishuMusic.misc import dbb, heroku
 
 from .logging import LOGGER
 

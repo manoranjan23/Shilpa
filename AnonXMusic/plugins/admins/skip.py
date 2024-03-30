@@ -2,14 +2,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
-from AnonXMusic import YouTube, app
-from AnonXMusic.core.call import Anony
-from AnonXMusic.misc import db
-from AnonXMusic.utils.database import get_loop
-from AnonXMusic.utils.decorators import AdminRightsCheck
-from AnonXMusic.utils.inline import close_markup, stream_markup
-from AnonXMusic.utils.stream.autoclear import auto_clean
-from AnonXMusic.utils.thumbnails import get_thumb
+from KishuMusic import YouTube, app
+from KishuMusic.core.call import Anony
+from KishuMusic.misc import db
+from KishuMusic.utils.database import get_loop
+from KishuMusic.utils.decorators import AdminRightsCheck
+from KishuMusic.utils.inline import close_markup, stream_markup
+from KishuMusic.utils.stream.autoclear import auto_clean
+from KishuMusic.utils.thumbnails import get_thumb
 from config import BANNED_USERS
 
 

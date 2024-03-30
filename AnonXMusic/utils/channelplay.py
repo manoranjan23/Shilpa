@@ -1,5 +1,5 @@
-from AnonXMusic import app
-from AnonXMusic.utils.database import get_cmode
+from KishuMusic import app
+from KishuMusic.utils.database import get_cmode
 
 
 async def get_channeplayCB(_, command, CallbackQuery):
