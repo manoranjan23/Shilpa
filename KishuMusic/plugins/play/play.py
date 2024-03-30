@@ -1,10 +1,10 @@
 import random
 import string
-
+import asyncio
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
-
+from KishuMusic.utils.database import get_assistant
 import config
 from KishuMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
 from KishuMusic.core.call import Jarvis
@@ -20,24 +20,22 @@ from KishuMusic.utils.inline import (
     slider_markup,
     track_markup,
 )
+from KishuMusic.utils.database import (
+    add_served_chat,
+    add_served_user,
+    blacklisted_chats,
+    get_lang,
+    is_banned_user,
+    is_on_off,
+)
 from KishuMusic.utils.logger import play_logs
 from KishuMusic.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
 
 @app.on_message(
-    filters.command(
-        [
-            "play",
-            "vplay",
-            "cplay",
-            "cvplay",
-            "playforce",
-            "vplayforce",
-            "cplayforce",
-            "cvplayforce",
-        ]
-    )
+   filters.command(["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"] ,prefixes=["/", "!"])
+            
     & filters.group
     & ~BANNED_USERS
 )
@@ -67,6 +65,7 @@ async def play_commnd(
         if message.reply_to_message
         else None
     )
+
     video_telegram = (
         (message.reply_to_message.video or message.reply_to_message.document)
         if message.reply_to_message
@@ -163,7 +162,8 @@ async def play_commnd(
                         config.PLAYLIST_FETCH_LIMIT,
                         message.from_user.id,
                     )
-                except:
+                except Exception as e:
+                    print(e)
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "playlist"
                 plist_type = "yt"
@@ -172,7 +172,32 @@ async def play_commnd(
                 else:
                     plist_id = url.split("=")[1]
                 img = config.PLAYLIST_IMG_URL
-                cap = _["play_9"]
+                cap = _["play_10"]
+            elif "https://youtu.be" in url:
+                videoid = url.split("/")[-1].split("?")[0]
+                details, track_id = await YouTube.track(f"https://www.youtube.com/watch?v={videoid}")
+                streamtype = "youtube"
+                img = details["thumb"]
+                cap = _["play_11"].format(
+                    details["title"],
+                    details["duration_min"],
+                )
+            elif "youtube.com/@" in url:
+            # Check if the URL is a YouTube channel link or user link
+                try:
+                    video_urls = fetch_channel_videos(url)
+                    for video_url in video_urls:
+                        # Add each video URL to the queue for playback
+                        details, track_id = await YouTube.track(video_url)
+                        streamtype = "playlist"
+                        img = details["thumb"]
+                        cap = _["play_10"].format(details["title"], details["duration_min"])
+                        await queue_video_for_playback(video_url, details, track_id, streamtype, img, cap)
+
+                    await mystic.edit_text("All videos from the channel have been added to the queue.")
+                except Exception as e:
+                    print(e)  # Handle or log the error appropriately
+                    await mystic.edit_text(_["play_3"])  # Error message for the user
             else:
                 try:
                     details, track_id = await YouTube.track(url)
