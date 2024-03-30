@@ -8,7 +8,7 @@ from KishuMusic.core.call import Jarvis
 from KishuMusic.utils import bot_sys_stats
 from KishuMusic.utils.decorators.language import language
 from KishuMusic.utils.inline import supp_markup
-from config import BANNED_USERS, PING_IMG_URL
+from config import BANNED_USERS, PING_VID_URL
 
 
 @app.on_message(filters.command(["alive"]) & ~BANNED_USERS)
