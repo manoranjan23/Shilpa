@@ -23,7 +23,7 @@ async def must_join_channel(app: Client, msg: Message):
             try:
                 await msg.reply_photo(
                     photo="https://telegra.ph/file/7cc7183b82327933b7b04.jpg", 
-                    caption=f"๏ ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ʏᴏᴜ'ᴠᴇ ɴᴏᴛ ᴊᴏɪɴᴇᴅ [๏sᴜᴘᴘᴏʀᴛ๏]({link}) ʏᴇᴛ, ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜsᴇ ᴍᴇ ᴛʜᴇɴ ᴊᴏɪɴ [๏sᴜᴘᴘᴏʀᴛ๏]({link}) ᴀɴᴅ sᴛᴀʀᴛ ᴍᴇ ᴀɢᴀɪɴ ! ",
+                    caption=f"๏ ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ʏᴏᴜ'ᴠᴇ ɴᴏᴛ ᴊᴏɪɴᴇᴅ <a href='{link}'>๏sᴜᴘᴘᴏʀᴛ๏</a> ʏᴇᴛ, ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜsᴇ ᴍᴇ ᴛʜᴇɴ ᴊᴏɪɴ <a href='{link}'>๏sᴜᴘᴘᴏʀᴛ๏</a> ᴀɴᴅ sᴛᴀʀᴛ ᴍᴇ ᴀɢᴀɪɴ !",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -31,7 +31,7 @@ async def must_join_channel(app: Client, msg: Message):
                             ]
                         ]
                     ),
-                    parse_mode="markdown"  # Enable markdown mode
+                    parse_mode="html"  # Enable HTML parse mode
                 )
                 await msg.stop_propagation()
             except ChatWriteForbidden:
