@@ -30,7 +30,7 @@
 
 
 <h2 align="center">
-    ─「 🦋ᴅᴇᴩʟᴏʏ ᴏɴ ᴠᴘs 💗 」─
+    ─「 💗ᴅᴇᴩʟᴏʏ ᴏɴ ᴠᴘs 🦋 」─
 </h2>
 <details>
 <summary><b>ᴅᴇᴘʟᴏʏ ᴛᴏ ᴠᴘs</b></summary>
@@ -68,15 +68,18 @@ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
 ━━━━━━━━━━━━━━━━━━━━
  </details>
  
-<h3 align="center">
-    ─「 sᴜᴩᴩᴏʀᴛ 」─
-</h3>
+<h2 align="center">
+    ─「 🦋sᴜᴩᴩᴏʀᴛ💗 」─
+</h2>
+<details>
+<summary><b>sᴜᴩᴩᴏʀᴛ</b></summary>
+<br>
 
 <a href="https://t.me/JARVIS_V2"><img title="Telegram" src="https://img.shields.io/badge/JARVIS-%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a>
 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hackerdoraemon2@gmail.com"><img title="GMAIL" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
 <a href="https://youtube.com/@rajnisha3"><img title="Youtube" src="https://img.shields.io/badge/youtube-%230077B5.svg?&style=for-the-badge&logo=youtube&logoColor=white"></a>
 <a href="https://instagram.com/_rajnish_mishra____"><img title="Instagram" src="https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white"></a>
 <a href="https://t.me/BWANDARLOK"><img title="Support" src="https://img.shields.io/badge/Support-%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+ </details>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
