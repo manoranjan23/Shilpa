@@ -9,8 +9,8 @@ from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from KishuMusic.modules.main.database import is_on_off
-from KishuMusic.modules.utils.formatters import time_to_seconds
+from KishuMusic.utils.database import is_on_off
+from KishuMusic.utils.formatters import time_to_seconds
 
 
 async def shell_cmd(cmd):
