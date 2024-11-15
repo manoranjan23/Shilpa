@@ -8,9 +8,9 @@ import yt_dlp
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
-from SankiMusic.utilities import config
-from SankiMusic.modules.main.database import is_on_off
-from SankiMusic.modules.utils.formatters import time_to_seconds
+from KishuMusic.utilities import config
+from KishuMusic.modules.main.database import is_on_off
+from KishuMusic.modules.utils.formatters import time_to_seconds
 
 
 async def shell_cmd(cmd):
