@@ -8,7 +8,7 @@ import yt_dlp
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
-from KishuMusic.utilities import config
+import config
 from KishuMusic.modules.main.database import is_on_off
 from KishuMusic.modules.utils.formatters import time_to_seconds
 
